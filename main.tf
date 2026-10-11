@@ -1,0 +1,6 @@
+data "oci_capacity_management_internal_occm_demand_signal_delivery" "capacity_management_internal_occm_demand_signal_delivery_lookup" {
+  for_each = var.capacity_management_internal_occm_demand_signal_delivery_lookup
+
+  occm_demand_signal_delivery_id = each.value.occm_demand_signal_delivery_id
+}
+
